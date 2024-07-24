@@ -1,0 +1,182 @@
+2024-07-24T04:05:34.334Z info: Event created successfully {
+  "event": {
+    "id": 39,
+    "event_name": "Opcode Tech",
+    "date": "2024-07-31T00:00:00.000Z",
+    "description": "work",
+    "updatedAt": "2024-07-24T04:05:34.120Z",
+    "createdAt": "2024-07-24T04:05:34.120Z"
+  }
+}
+2024-07-24T04:05:51.202Z info: Event deleted successfully {
+  "id": "39"
+}
+2024-07-24T04:22:15.455Z info: User registered successfully {
+  "user": {
+    "id": 12,
+    "username": "Deeps",
+    "password": "$2a$10$dU4odLJYo4rI1g61/c8lUOGeaPfEJ5ehN/JH.kyDxprJYIPo86UdC",
+    "role": "user",
+    "updatedAt": "2024-07-24T04:22:15.338Z",
+    "createdAt": "2024-07-24T04:22:15.338Z"
+  }
+}
+2024-07-24T04:22:50.944Z info: User logged in successfully {
+  "user": {
+    "id": 12,
+    "username": "Deeps",
+    "password": "$2a$10$dU4odLJYo4rI1g61/c8lUOGeaPfEJ5ehN/JH.kyDxprJYIPo86UdC",
+    "role": "user",
+    "createdAt": "2024-07-24T04:22:15.338Z",
+    "updatedAt": "2024-07-24T04:22:15.338Z"
+  }
+}
+2024-07-24T04:26:09.545Z info: User registered successfully {
+  "user": {
+    "id": 1,
+    "username": "testuser",
+    "password": "$2a$10$dcVvvTvg2S/pXCrbXl2k5.uupQ44no0Bji4JzygssSm.y4t99.YJy",
+    "role": "user",
+    "updatedAt": "2024-07-24T04:26:09.519Z",
+    "createdAt": "2024-07-24T04:26:09.519Z"
+  }
+}
+2024-07-24T04:26:09.833Z error: Error registering user {
+  "error": {
+    "name": "SequelizeUniqueConstraintError",
+    "errors": [
+      {
+        "message": "username must be unique",
+        "type": "unique violation",
+        "path": "username",
+        "value": "testuser",
+        "origin": "DB",
+        "instance": {
+          "id": null,
+          "username": "testuser",
+          "password": "$2a$10$bv57uSGes1e15yWq3kI1JOBLibu29.2/QfRoR1vC1jMvDSUKrP41m",
+          "role": "user",
+          "updatedAt": "2024-07-24T04:26:09.707Z",
+          "createdAt": "2024-07-24T04:26:09.707Z"
+        },
+        "validatorKey": "not_unique",
+        "validatorName": null,
+        "validatorArgs": []
+      }
+    ],
+    "parent": {
+      "length": 209,
+      "name": "error",
+      "severity": "ERROR",
+      "code": "23505",
+      "detail": "Key (username)=(testuser) already exists.",
+      "schema": "public",
+      "table": "users",
+      "constraint": "users_username_key",
+      "file": "nbtinsert.c",
+      "line": "673",
+      "routine": "_bt_check_unique",
+      "sql": "INSERT INTO \"users\" (\"id\",\"username\",\"password\",\"role\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING \"id\",\"username\",\"password\",\"role\",\"createdAt\",\"updatedAt\";",
+      "parameters": [
+        "testuser",
+        "$2a$10$bv57uSGes1e15yWq3kI1JOBLibu29.2/QfRoR1vC1jMvDSUKrP41m",
+        "user",
+        "2024-07-24 04:26:09.707 +00:00",
+        "2024-07-24 04:26:09.707 +00:00"
+      ]
+    },
+    "original": {
+      "length": 209,
+      "name": "error",
+      "severity": "ERROR",
+      "code": "23505",
+      "detail": "Key (username)=(testuser) already exists.",
+      "schema": "public",
+      "table": "users",
+      "constraint": "users_username_key",
+      "file": "nbtinsert.c",
+      "line": "673",
+      "routine": "_bt_check_unique",
+      "sql": "INSERT INTO \"users\" (\"id\",\"username\",\"password\",\"role\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING \"id\",\"username\",\"password\",\"role\",\"createdAt\",\"updatedAt\";",
+      "parameters": [
+        "testuser",
+        "$2a$10$bv57uSGes1e15yWq3kI1JOBLibu29.2/QfRoR1vC1jMvDSUKrP41m",
+        "user",
+        "2024-07-24 04:26:09.707 +00:00",
+        "2024-07-24 04:26:09.707 +00:00"
+      ]
+    },
+    "fields": {
+      "username": "testuser"
+    },
+    "sql": "INSERT INTO \"users\" (\"id\",\"username\",\"password\",\"role\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING \"id\",\"username\",\"password\",\"role\",\"createdAt\",\"updatedAt\";"
+  }
+}
+2024-07-24T04:26:09.983Z info: User logged in successfully {
+  "user": {
+    "id": 1,
+    "username": "testuser",
+    "password": "$2a$10$dcVvvTvg2S/pXCrbXl2k5.uupQ44no0Bji4JzygssSm.y4t99.YJy",
+    "role": "user",
+    "createdAt": "2024-07-24T04:26:09.519Z",
+    "updatedAt": "2024-07-24T04:26:09.519Z"
+  }
+}
+2024-07-24T04:27:59.598Z warn: Invalid credentials {
+  "username": "Deeps"
+}
+2024-07-24T04:28:52.408Z warn: Invalid credentials {
+  "username": "testUser"
+}
+2024-07-24T04:29:12.479Z info: User registered successfully {
+  "user": {
+    "id": 3,
+    "username": "testUser",
+    "password": "$2a$10$0Vlcxkbn67ZfI6E4Rq/lHe2M5uwBJwA63pozYRMvl1g/edsOc/0Je",
+    "role": "admin",
+    "updatedAt": "2024-07-24T04:29:12.369Z",
+    "createdAt": "2024-07-24T04:29:12.369Z"
+  }
+}
+2024-07-24T04:29:42.837Z info: User logged in successfully {
+  "user": {
+    "id": 3,
+    "username": "testUser",
+    "password": "$2a$10$0Vlcxkbn67ZfI6E4Rq/lHe2M5uwBJwA63pozYRMvl1g/edsOc/0Je",
+    "role": "admin",
+    "createdAt": "2024-07-24T04:29:12.369Z",
+    "updatedAt": "2024-07-24T04:29:12.369Z"
+  }
+}
+2024-07-24T04:29:55.687Z info: User logged in successfully {
+  "user": {
+    "id": 3,
+    "username": "testUser",
+    "password": "$2a$10$0Vlcxkbn67ZfI6E4Rq/lHe2M5uwBJwA63pozYRMvl1g/edsOc/0Je",
+    "role": "admin",
+    "createdAt": "2024-07-24T04:29:12.369Z",
+    "updatedAt": "2024-07-24T04:29:12.369Z"
+  }
+}
+2024-07-24T04:41:14.146Z info: User logged in: testUser 
+2024-07-24T04:44:29.960Z info: User logged in: testUser 
+2024-07-24T04:59:14.359Z info: User logged in: testUser 
+2024-07-24T05:10:03.744Z info: User logged in: testUser 
+2024-07-24T05:22:58.915Z info: User registered: testuser 
+2024-07-24T05:22:59.064Z error: Error registering user: Validation error 
+2024-07-24T05:22:59.162Z info: User logged in: testuser 
+2024-07-24T05:27:01.539Z info: User registered: testuser 
+2024-07-24T05:27:01.689Z error: Error registering user: Validation error 
+2024-07-24T05:27:01.785Z info: User logged in: testuser 
+2024-07-24T05:27:47.846Z warn: Invalid login attempt: testUser 
+2024-07-24T05:28:14.617Z warn: Invalid login attempt: testUser 
+2024-07-24T05:29:07.679Z info: User registered: Like 
+2024-07-24T05:29:26.308Z info: User logged in: Like 
+2024-07-24T05:33:00.876Z info: User registered: testuser 
+2024-07-24T05:33:01.020Z error: Error registering user: Validation error 
+2024-07-24T05:33:01.117Z info: User logged in: testuser 
+2024-07-24T05:33:48.480Z warn: Invalid login attempt: Like2024-07-24T05:35:10.311Z warn: Invalid login attempt: testUser 
+2024-07-24T05:35:42.581Z warn: Invalid login attempt: User 
+2024-07-24T05:35:52.255Z info: User registered: User 
+2024-07-24T05:36:06.145Z info: User logged in: User 
+2024-07-24T05:36:18.446Z info: User logged in: User 
